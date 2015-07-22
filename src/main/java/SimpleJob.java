@@ -11,7 +11,7 @@ import java.util.Date;
 public class SimpleJob implements Job {
     public void execute(JobExecutionContext jobCtx)throws JobExecutionException
     {
-        System.out.println(jobCtx.getTrigger().getClass().getName()+"triggered time is:"+new Date());
+        System.out.println(jobCtx.getTrigger().getClass().getName()+" triggered time is: "+new Date());
     }
 
 }
